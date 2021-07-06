@@ -19,13 +19,21 @@
 
 # 'SWOT' ANALYSIS
 ### Strengths
-The program is scalable in terms of number of genres to be added.
-and the scoring system adopted is fairly simple enabling easy calculation of winner.
-Weaknesses
-Program is not GUI based so every correct answer options needs to be typed.
-Oppurtunities
-Converting program into GUI based game.
-Option of monitoring and keeping the highest score.
-Threats
-No Graphic user interface buttons
+* Since the program uses File handling, questions can be added into the file.
+* The Program can be easily modified. (For ex. Number of sections can be added.)
+* The scoring system adopted is fairly simple enabling easy calculation of marks.
+* Correct answer of the questions can be known.
+
+### Weaknesses
+* Program is not GUI based so every correct answer options needs to be typed.
+
+### Oppurtunities
+* The program can be made GUI based.
+* Time based constraints can be added.
+
+### Threats
+* No Time based constraints.
+* the program may terminate due to some incorrect user inputs.
+
+
 
