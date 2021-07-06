@@ -12,3 +12,8 @@
 * Easy to modify.
 * There is a scorecard which will be generated at the end.
 
+## Research
+* Content for the Quiz.
+* File handling.
+
+* 'SWOT' ANALYSIS
