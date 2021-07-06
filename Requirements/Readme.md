@@ -35,12 +35,14 @@
 * No Time based constraints.
 * the program may terminate due to some incorrect user inputs.
 
+## High-Level Requirements
+
 |ID	  |Description		             |Implemented/Future|
 |-----|----------------------------|------------------|
-|HLR1	|Questionnaire	             |       Implemented|
-|HLR2	|Life Tracker	               |       Implemented|
-|HLR3	|Dynamic Memory management	 |       Implemented| 
-|HLR4	|Display Support	           |       Implemented|  
+|HLR1	|Questionnaire	in files     |       Implemented|
+|HLR2	|Dynamic Memory management	 |       Implemented| 
+|HLR3	|Display Support	           |       Implemented|  
+
 
 
 
