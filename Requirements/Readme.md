@@ -43,6 +43,3 @@
 |HLR2	|Dynamic Memory management	 |       Implemented| 
 |HLR3	|Display Support	           |       Implemented|  
 
-
-
-
