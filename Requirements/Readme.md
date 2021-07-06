@@ -31,14 +31,16 @@
 * The program can be made GUI based.
 * Time based constraints can be added.
 
-ID |	Description	Remarks	Implemented/Future
-HLR1	Questionnaire	in .csv file	Implemented
-HLR2	Life Tracker	function	Implemented
-HLR3	Dynamic Memory management	inbuilt	Implemented
-HLR4	Display Support	inbuilt	Implemented
 ### Threats
 * No Time based constraints.
 * the program may terminate due to some incorrect user inputs.
+
+|ID	  |Description	Remarks	Implemented/Future        |
+|-----|-----------------------------------------------|
+|HLR1	|Questionnaire	in .csv file	Implemented       |
+|HLR2	|Life Tracker	function	Implemented             |
+|HLR3	|Dynamic Memory management	inbuilt	Implemented | 
+|HLR4	|Display Support	inbuilt	Implemented           |  
 
 
 
