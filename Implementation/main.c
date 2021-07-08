@@ -1,5 +1,8 @@
-#include "header.h"
 
+//This is main.c
+
+
+#include "header.h"
 
 typedef struct Players
 {
@@ -79,7 +82,7 @@ int main()
     printf("Enter your name, branch, age and college\n");
     scanf("%s %s %d %s", p.name, p.branch, &p.age, p.college);
     printf("***********************************************************************************************\n");
-    printf("--------------------------------------Round 1: Prelims-----------------------------------------\n");
+    printf("--------------------------------------Section 1: Aptitude-----------------------------------------\n");
     printf("***********************************************************************************************\n");
     getchar();
 
