@@ -1,6 +1,6 @@
 //#include "header.h"
 //#include "unity.h"
-//#define PROJECT_NAME    "Assessment platform"
+#define PROJECT_NAME    "Assessment_platform"
 #include "../unity/unity.h"
 #include "../unity/unity_internals.h"
 

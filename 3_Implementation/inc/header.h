@@ -5,9 +5,9 @@
 #include<string.h>
 #include<stdlib.h>
 #include<ctype.h>
-#include "inst.c"
-#include "reg.c"
-/*typedef struct Players
+//#include "inst.c"
+//#include "reg.c"
+typedef struct Players
 {
     //char name[20];
     char Name[50];
@@ -15,7 +15,7 @@
     //int age;
     char college[50];
 } Player;
-Player p;*/
+Player p;
 
 int score_pos(int s1);
 int score_neg(int s2);

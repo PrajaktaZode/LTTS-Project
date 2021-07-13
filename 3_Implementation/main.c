@@ -1,7 +1,5 @@
 //This is main.c
 #include "header.h"
-//#include "Registration.c"
-
 
 int score_pos(int s1)
 {

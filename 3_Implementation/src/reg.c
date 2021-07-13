@@ -1,5 +1,5 @@
 #include "header.h"
-typedef struct Players
+/*typedef struct Players
 {
     //char name[20];
     char Name[50];
@@ -7,7 +7,7 @@ typedef struct Players
     //int age;
     char college[50];
 } Player;
-Player p;
+Player p;*/
 
 void Register()
 {
