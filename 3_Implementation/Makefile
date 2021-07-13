@@ -1,15 +1,15 @@
-PROJ_NAME = Assessment_Platform
+PROJ_NAME = Assessment
 #TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 
 #COVERAGE_TEST_NAME = coverage_$(PROJ_NAME)
 
-SRC = Implementation/src/inst.c\
-Implementation/src/reg.c
+SRC = 3_Implementation/src/inst.c\
+3_Implementation/src/reg.c
 
 #TEST_SRC = ./test/test.c unity/unity.c 
 
-INC = Implementation/inc
+INC = 3_Implementation/inc
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
