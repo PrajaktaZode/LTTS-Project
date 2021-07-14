@@ -1,3 +1,9 @@
+3_Implementation/main.c:99:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
+            printf("2. The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:\n");
+            ^
+3_Implementation/main.c:183:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
+            printf("5. The compound interest on Rs. 30,000 at 7% per annum is Rs. 4347. The period (in years) is:\n");
+            ^
 3_Implementation/src/reg.c:22:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
     gets(id);
     ^
@@ -22,12 +28,6 @@
 3_Implementation/src/reg.c:71:20: warning: fscanf() without field width limits can crash with huge input data. [invalidscanf]
             while (fscanf(registration, "%s", string) == 1)
                    ^
-3_Implementation/src/main.c:101:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
-            printf("2. The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:\n");
-            ^
-3_Implementation/src/main.c:185:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
-            printf("5. The compound interest on Rs. 30,000 at 7% per annum is Rs. 4347. The period (in years) is:\n");
-            ^
 3_Implementation/test/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
 
 ^
@@ -199,7 +199,7 @@ void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
 3_Implementation/unity/unity.c:1849:0: style: The function 'UnitySetTestFile' is never used. [unusedFunction]
 
 ^
-3_Implementation/src/main.c:24:0: style: The function 'display' is never used. [unusedFunction]
+3_Implementation/main.c:22:0: style: The function 'display' is never used. [unusedFunction]
 
 ^
 3_Implementation/test/test.c:33:0: style: The function 'test_main' is never used. [unusedFunction]
