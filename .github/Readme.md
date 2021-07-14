@@ -1,1 +1,6 @@
-
+[![CI](https://github.com/PrajaktaZode/LTTS-Project/actions/workflows/main.yml/badge.svg)](https://github.com/PrajaktaZode/LTTS-Project/actions/workflows/main.yml)
+[![cppcheck-action-test](https://github.com/PrajaktaZode/LTTS-Project/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/PrajaktaZode/LTTS-Project/actions/workflows/cpp_check.yml)
+![Quality_score](https://www.code-inspector.com/project/25157/score/svg)
+![quality_grade](https://www.code-inspector.com/project/25157/status/svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/747d0206811943218feeabfe6ef5e0c2)](https://www.codacy.com/gh/PrajaktaZode/LTTS-Project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PrajaktaZode/LTTS-Project&amp;utm_campaign=Badge_Grade)
+[![Contribution Check - Git Inspector](https://github.com/PrajaktaZode/LTTS-Project/actions/workflows/git_inspector.yml/badge.svg)](https://github.com/PrajaktaZode/LTTS-Project/actions/workflows/git_inspector.yml)
