@@ -11,12 +11,13 @@
 int score_pos(int s1);
 int score_neg(int s2);
 
-
-
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
+
+/* Write all the test functions */
+
 void test_score_pos()
 {
     TEST_ASSERT_EQUAL(8, score_pos(4));
@@ -48,7 +49,6 @@ int test_main(void)
   return UNITY_END();
 }
 
-/* Write all the test functions */
 
 
 

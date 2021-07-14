@@ -1,3 +1,4 @@
+//function to display instruvtions
 //#include<stdio.h>
 #include "header.h"
 void instructions()

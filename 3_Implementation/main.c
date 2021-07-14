@@ -1,23 +1,22 @@
-//This is main.c
 #include "header.h"
-
+// Function to increment the score my 4
 int score_pos(int s1)
 {
     s1 = s1 + 4;
     return s1;
 }
-
+// Function to decrement the score my 1
 int score_neg(int s2)
 {
     s2 = s2 - 1;
     return s2;
 }
-
+// Function to calculate final score
 int final_score(int m1, int m2, int m3)
 {
     return m1 + m2 + m3;
 }
-// Registration
+// main function starts here
 int main()
 {
     int *score;
@@ -26,10 +25,10 @@ int main()
     int r1_score, r2_score, r3_score = 0;
     int index_p = 1, index_a = 1;
     char var;
-    
+
     Register();
     score = (int *)malloc(sizeof(int));
-    
+
     system("CLS");
     instructions();
     if (getchar() == 0)
@@ -43,6 +42,9 @@ int main()
     getchar();
     if (getchar() == 10)
         system("CLS");
+
+    // Section 1 Starts here
+
     while (r1--)
     {
         switch (index_p)
@@ -199,6 +201,9 @@ int main()
 
     if (getchar() == 10)
         system("CLS");
+
+    // Section 2 Starts here
+
     t_score = 0;
     while (r2--)
     {
@@ -366,6 +371,8 @@ int main()
     printf("Section 2: Verbal Ability Completed!\n");
     printf("Candidate's Score in Verbal Ability : %d\n", r2_score);
 
+    // Section 3 Starts here
+
     printf("\n\n\n\n\n\n\t\t\t\t*********************    SECTION 3: FUNDAMENTALS OF C    *********************\n");
 
     if (getchar() == 10)
@@ -443,17 +450,22 @@ int main()
 
     printf("Section 3: 'Fundamentals Of C' Completed!\n");
     printf("Candidate's Score in 'Fundamentals Of C'  : %d\n", r3_score);
+    
+    // final_score calculated
 
     *score = final_score(r1_score, r2_score, r3_score);
     getchar();
     if (getchar() == 10)
         system("CLS");
+    
+    //Score tabulated
 
     printf("********************************FINAL SCORESHEET******************************************\n");
     printf("Player Name\t\t  Round 1\t Round 2\t Round 3\t Total Score\n");
-    printf("%s         \t\t  %d     \t %d\t    \t %d\t\t %d\n", p.Name,r1_score, r2_score, r3_score, *score);
+    printf("%s         \t\t  %d     \t %d\t    \t %d\t\t %d\n", p.Name, r1_score, r2_score, r3_score, *score);
     printf("******************************************************************************************\n");
-
+    
+    // condition for assessment qualified or not
     if (*score >= 27)
     {
         printf("\n\nCongratulations..!!! You Have Qualified All The Rounds Of The Assessment");
@@ -462,7 +474,7 @@ int main()
     {
         printf("\n\n Sorry..!! You Did Not Qualify All The Rounds Of The Assessment\n\nBetter Luck Next Time..\n\n");
     }
-    
+
     free(score);
 
     return 0;

@@ -9,10 +9,8 @@
 //#include "reg.c"
 typedef struct Players
 {
-    //char name[20];
     char Name[50];
     char branch[20];
-    //int age;
     char college[50];
 } Player;
 Player p;
