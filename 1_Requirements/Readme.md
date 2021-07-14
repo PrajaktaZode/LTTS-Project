@@ -39,29 +39,30 @@
 * the program may terminate due to some incorrect user inputs.
 
 
-### 4W's and 1'H
+# 4W's and 1'H
 ## Who:
-# Who are the stakeholders ?
+### Who are the stakeholders ?
 
 1. Any person or a member of the STEPin program willing to take up the quiz and find out if he/she is GENESIS ready.
 2. The quiz is based on general concepts and not specific to any particular domain. 
 ## What:
-# What does the project do ?
+### What does the project do ?
 
 1. The project aims at generating a quiz assessment program which is input/output based depicting the score of the participant.
 2. The participant has to qualifiy a minimum score.
 ## When:
-# When will it get completed ?
+### When will it get completed ?
 
 The Project will be completed by 14th July 2021.
 ## Where:
-# Where is the project done ?
+### Where is the project done ?
 
 The Project is implemented on C program platform based on Input/Output.
 ## How:
-# How to achieve the Target ?
+### How to achieve the Target ?
 
 To achieve the target
+
     1. A good knowledge in file handling in C is a must.
     2. Basic input output based functions
     3. Proficiency in Structures and pointers.
