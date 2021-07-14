@@ -18,21 +18,6 @@ int final_score(int m1, int m2, int m3)
     return m1 + m2 + m3;
 }
 // Registration
-
-void display()
-{
-    printf("\n\n\n\t\t\t\t Welcome to the Assessment!!!\n ");
-    printf("\t\t\t\t -------------------------\n\n\n");
-    printf("**********************************************************************************************\n");
-    printf("\t\t "
-           "Here are a few Instructions before you begin the assessment"
-           ":\n");
-    printf("\t\t   Register yourself before taking up the assessment. \n");
-    //printf("\t\t <<  Press 'R' to Register.             >>\n");
-    printf("\t\t <<  Press 'S' to Start the Assessment. >>\n");
-    printf("\t\t <<  Press 'I' to Read the Instructions.>>\n");
-    printf("**********************************************************************************************\n");
-}
 int main()
 {
     int *score;
@@ -41,15 +26,10 @@ int main()
     int r1_score, r2_score, r3_score = 0;
     int index_p = 1, index_a = 1;
     char var;
-    // char ch;
-    //scanf("%c", &ch);
-    //int v;
+    
     Register();
     score = (int *)malloc(sizeof(int));
-    //display();
-
-    //if (getchar() == 'I')
-
+    
     system("CLS");
     instructions();
     if (getchar() == 0)
@@ -212,7 +192,7 @@ int main()
         }
     }
 
-    printf("Section 1 : Completed!\n");
+    printf("Section 1 : Aptitude Completed!\n");
     printf("Candidate's Score in Aptitude : %d\n", r1_score);
 
     printf("\n\n\n\n\n\n\t\t\t\t*********************    SECTION 2: VERBAL ABILITY    *********************\n");
@@ -384,7 +364,7 @@ int main()
     }
 
     printf("Section 2: Verbal Ability Completed!\n");
-    printf("Player Score in Verbal Ability : %d\n", r2_score);
+    printf("Candidate's Score in Verbal Ability : %d\n", r2_score);
 
     printf("\n\n\n\n\n\n\t\t\t\t*********************    SECTION 3: FUNDAMENTALS OF C    *********************\n");
 
@@ -451,7 +431,7 @@ int main()
 
     {
         printf("Correct Answer\n");
-        r3_score += 4;
+        r3_score += 5;
         getchar();
     }
     else
@@ -461,8 +441,8 @@ int main()
         getchar();
     }
 
-    printf("Section 3: Technical Completed!\n");
-    printf("Player Score in Finals : %d\n", r3_score);
+    printf("Section 3: 'Fundamentals Of C' Completed!\n");
+    printf("Candidate's Score in 'Fundamentals Of C'  : %d\n", r3_score);
 
     *score = final_score(r1_score, r2_score, r3_score);
     getchar();
@@ -474,11 +454,15 @@ int main()
     printf("%s         \t\t  %d     \t %d\t    \t %d\t\t %d\n", p.Name,r1_score, r2_score, r3_score, *score);
     printf("******************************************************************************************\n");
 
-    if (*score > 10)
+    if (*score >= 27)
     {
-        printf("congo");
+        printf("\n\nCongratulations..!!! You Have Qualified All The Rounds Of The Assessment");
     }
-    //puts(p.branch);
+    else
+    {
+        printf("\n\n Sorry..!! You Did Not Qualify All The Rounds Of The Assessment\n\nBetter Luck Next Time..\n\n");
+    }
+    
     free(score);
 
     return 0;

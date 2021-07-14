@@ -1,13 +1,4 @@
 #include "header.h"
-/*typedef struct Players
-{
-    //char name[20];
-    char Name[50];
-    char branch[20];
-    //int age;
-    char college[50];
-} Player;
-Player p;*/
 
 void Register()
 {
@@ -18,7 +9,7 @@ void Register()
     char flag;
 
 start:
-    printf("Enter your registration ID to login : ");
+    printf("\n\nEnter your registration ID to login : ");
     gets(id);
 
     FILE *registration = fopen("registration.txt", "r");
@@ -35,7 +26,7 @@ start:
             num++;
             if (num == 1)
             {
-                printf("log in successful\n");
+                printf("\n\nlog in successful\n");
                 break;
             }
         }
@@ -45,9 +36,9 @@ start:
 
     if (num == 0)
     {
-        printf("You have to register first to login\n");
+        printf("\nYou have to register first to login\n");
 
-        printf("Press 'R' to register and press 'Q' to quit\n");
+        printf("\nPress 'R' to register and press 'Q' to quit\n");
         scanf("%c", &flag);
 
         if (flag == 'Q' || flag == 'q')
@@ -57,13 +48,14 @@ start:
 
         else if (flag == 'R' || flag == 'r')
         {
-            printf("Enter your Name,Branch and College : ");
+            puts("\nEnter your Name: ");
             gets(p.Name);
             gets(p.Name);
+            puts("\nEnter your Branch: ");
             gets(p.branch);
-            gets(p.branch);
+            puts("\nEnter your College Name: ");
             gets(p.college);
-            puts("check");
+            puts("\n----Details Captured----");
 
 
             // For registration of a student
@@ -76,7 +68,7 @@ start:
             x = x + 1;
             itoa(x, string, 10);
             printf("\nThank You ! Successfully Registered ! \n");
-            printf("Your registration ID is : %d\n", x);
+            printf("\nYour registration ID is : %d\n", x);
             fclose(registration);
 
             registration = fopen("registration.txt", "a");

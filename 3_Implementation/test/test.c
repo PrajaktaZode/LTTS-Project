@@ -20,11 +20,15 @@ void tearDown(){}
 void test_score_pos()
 {
     TEST_ASSERT_EQUAL(8, score_pos(4));
+    TEST_ASSERT_EQUAL(4, score_pos(0));
+    TEST_ASSERT_EQUAL(2, score_pos(-2));
  
 }
 void test_score_neg()
 {
     TEST_ASSERT_EQUAL(3, score_neg(4));
+    TEST_ASSERT_EQUAL(-1, score_neg(0));
+    TEST_ASSERT_EQUAL(1, score_neg(2));
  
 }
 
