@@ -1,43 +1,40 @@
-3_Implementation/main.c:99:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
+3_Implementation/main.c:79:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
             printf("2. The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:\n");
             ^
-3_Implementation/main.c:183:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
+3_Implementation/main.c:163:13: error: printf format string requires 1 parameter but only 0 are given. [wrongPrintfScanfArgNum]
             printf("5. The compound interest on Rs. 30,000 at 7% per annum is Rs. 4347. The period (in years) is:\n");
             ^
-3_Implementation/src/reg.c:22:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+3_Implementation/src/reg.c:13:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
     gets(id);
     ^
-3_Implementation/src/reg.c:61:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+3_Implementation/src/reg.c:52:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
             gets(p.Name);
             ^
-3_Implementation/src/reg.c:62:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+3_Implementation/src/reg.c:53:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
             gets(p.Name);
             ^
-3_Implementation/src/reg.c:63:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+3_Implementation/src/reg.c:55:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
             gets(p.branch);
             ^
-3_Implementation/src/reg.c:64:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
-            gets(p.branch);
-            ^
-3_Implementation/src/reg.c:65:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+3_Implementation/src/reg.c:57:13: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
             gets(p.college);
             ^
-3_Implementation/src/reg.c:31:12: warning: fscanf() without field width limits can crash with huge input data. [invalidscanf]
+3_Implementation/src/reg.c:22:12: warning: fscanf() without field width limits can crash with huge input data. [invalidscanf]
     while (fscanf(registration, "%s", string) == 1)
            ^
-3_Implementation/src/reg.c:71:20: warning: fscanf() without field width limits can crash with huge input data. [invalidscanf]
+3_Implementation/src/reg.c:63:20: warning: fscanf() without field width limits can crash with huge input data. [invalidscanf]
             while (fscanf(registration, "%s", string) == 1)
                    ^
 3_Implementation/test/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
 
 ^
-3_Implementation/test/test.c:39:0: error: failed to expand 'RUN_TEST', Wrong number of parameters for macro 'RUN_TEST'. [preprocessorErrorDirective]
+3_Implementation/test/test.c:43:0: error: failed to expand 'RUN_TEST', Wrong number of parameters for macro 'RUN_TEST'. [preprocessorErrorDirective]
   RUN_TEST(test_score_pos);
 ^
-3_Implementation/test/test.c:39:0: information: Skipping configuration 'RUN_TEST' since the value of 'RUN_TEST' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+3_Implementation/test/test.c:43:0: information: Skipping configuration 'RUN_TEST' since the value of 'RUN_TEST' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
   RUN_TEST(test_score_pos);
 ^
-3_Implementation/test/test.c:40:0: information: Skipping configuration 'RUN_TEST' since the value of 'RUN_TEST' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+3_Implementation/test/test.c:44:0: information: Skipping configuration 'RUN_TEST' since the value of 'RUN_TEST' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
   RUN_TEST(test_score_neg);
 ^
 3_Implementation/unity/unity_internals.h:471:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
@@ -199,10 +196,7 @@ void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
 3_Implementation/unity/unity.c:1849:0: style: The function 'UnitySetTestFile' is never used. [unusedFunction]
 
 ^
-3_Implementation/main.c:22:0: style: The function 'display' is never used. [unusedFunction]
-
-^
-3_Implementation/test/test.c:33:0: style: The function 'test_main' is never used. [unusedFunction]
+3_Implementation/test/test.c:37:0: style: The function 'test_main' is never used. [unusedFunction]
 
 ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
